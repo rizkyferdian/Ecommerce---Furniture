@@ -9,9 +9,9 @@
         <script>
             var dataTable = $('#crudTable').DataTable({
                 ajax: {
-                    url: '{!! url()->current() !!}',
+                    url: '{!! url()->current() !!}'
                 },
-                columuns: [{
+                columns: [{
                         data: 'id',
                         name: 'id',
                         width: '5%'
@@ -30,9 +30,9 @@
                         orderable: false,
                         searchable: false,
                         width: '25%'
-                    },
-                ],
-            });
+                    }
+                ]
+            })
         </script>
     </x-slot>
 
